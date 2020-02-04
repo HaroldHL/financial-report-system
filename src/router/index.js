@@ -5,20 +5,19 @@ Vue.use(VueRouter)
 
 // layout
 
+
 const routes = [
   {
     path: '/',
-    name: 'home',
-    redirect:'/404'
   },
   {
     path: '/login',
     name: 'Login',
-    component: ()=> import('@/views/login')
+    component: ()=> import('../views/login')
   },
   {
     path: '/404',
-    component: () => import('@/views/404'),
+    component: () => import('../views/404'),
     hidden: true
   },
 ]
